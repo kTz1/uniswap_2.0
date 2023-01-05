@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 
 import { Contract } from '@ethersproject/contracts';
 import { abis } from '@my-app/contracts';

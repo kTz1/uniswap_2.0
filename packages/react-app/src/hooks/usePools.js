@@ -22,7 +22,7 @@ export const usePools = () => {
 
   useEffect(() => {
     loadPools(readOnlyUrls[readOnlyChainId])
-      .then((pools) => {
+      .then(() => {
         setPools(pools);
         setLoading(false);
       });

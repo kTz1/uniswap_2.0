@@ -9,7 +9,7 @@ export const getPairsInfo = async (pairAddresses, web3) => {
 
   for (let i = 0; i < pairAddresses.length; i++) {
     const pairAddress = pairAddresses[i];
-    const pair = new web3.eth.Contract(pairABI, pairAddress);
+    const pair = new web3.eth.Contract(pairABI, pairAddresses[i]);
 
     const token0Address = await pair.methods.token0().call();
     const token1Address = await pair.methods.token1().call();
