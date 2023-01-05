@@ -9,7 +9,9 @@ import { parseUnits } from 'ethers/lib/utils';
 
 import { getAvailableTokens, getCounterpartTokens, findPoolByTokens, isOperationPending, getFailureMessage, getSuccessMessage } from '../utils';
 import { ROUTER_ADDRESS } from '../config';
-import { AmountIn, AmountOut, Balance } from '.';
+import AmountIn from './AmountIn';
+import AmountOut from './AmountOut';
+import Balance from './Balance';
 import styles from '../styles';
 
 const Exchange = ({ pools }) => {
